@@ -69,12 +69,14 @@ const MovieDetail = (props: Props) => {
           }
         }
         fetchData();
-      }, []);
+      }, [dispatch]);
 
 
-    const  { movieDetail, errorMessage, loading } = state;
+    const  { movieDetail, errorMessage, /* loading */ } = state;
     return(
-        <div>
+        <>
+          { errorMessage !== undefined ?
+          <div>
             movie title: {movieDetail.Title}
             poster
             year
@@ -89,7 +91,13 @@ const MovieDetail = (props: Props) => {
             ratings
             production
             website
-        </div>
+          </div>
+            :
+            <div>
+              { errorMessage}
+            </div>
+          }
+        </>
     )
 }
 
