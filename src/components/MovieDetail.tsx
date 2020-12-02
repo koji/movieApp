@@ -42,7 +42,8 @@ const reducer = (state: any, action: any) => {
 // movie detail: http://www.omdbapi.com/?apikey=4a3b711b&i=tt0371746
 
 const MovieDetail = (props: Props) => {
-    const apiKey = "4a3b711b";
+    // const apiKey = "4a3b711b";
+    const apiKey = process.env.REACT_APP_CUSTOM_ENV_VAR;
     const MOVIE_API_DETAIL_URL = `http://www.omdbapi.com/?apikey=${apiKey}&i=${props.id}`;
 
     const [state, dispatch] = useReducer(reducer, initialState);
@@ -69,7 +70,8 @@ const MovieDetail = (props: Props) => {
           }
         }
         fetchData();
-      }, [dispatch]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+      }, []);
 
 
     const  { movieDetail, errorMessage, /* loading */ } = state;
