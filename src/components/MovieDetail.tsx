@@ -39,10 +39,9 @@ const reducer = (state: any, action: any) => {
     }
   }
 
-// movie detail: http://www.omdbapi.com/?apikey=4a3b711b&i=tt0371746
+// movie detail: http://www.omdbapi.com/?apikey=vvvvvv&i=tt0371746
 
 const MovieDetail = (props: Props) => {
-    // const apiKey = "4a3b711b";
     const apiKey = process.env.REACT_APP_CUSTOM_ENV_VAR;
     const MOVIE_API_DETAIL_URL = `http://www.omdbapi.com/?apikey=${apiKey}&i=${props.id}`;
 
