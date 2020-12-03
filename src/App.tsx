@@ -110,7 +110,7 @@ const App = () => {
     <div className="App">
       <Header text="Movie Search" />
       <Search search={search} />
-      <p className="App-Intro">Sharing a few of our favourite movies</p>
+      {/* <p className="App-Intro">Sharing a few of our favourite movies</p> */}
       <div className="movies">
         {loading && !errorMessage ?(
           <span>loading...</span>
