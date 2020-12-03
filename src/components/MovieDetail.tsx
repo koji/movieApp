@@ -69,8 +69,7 @@ const MovieDetail = (props: Props) => {
           }
         }
         fetchData();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-      }, []);
+      }, [MOVIE_API_DETAIL_URL]);
 
     // eslint-disable-next-line
     const  { movieDetail, errorMessage, /* loading */ } = state;
