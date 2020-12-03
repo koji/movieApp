@@ -75,30 +75,30 @@ const MovieDetail = (props: Props) => {
 
     const  { movieDetail, errorMessage, /* loading */ } = state;
     return(
-        <>
-          { errorMessage !== undefined ?
-          <div>
-            movie title: {movieDetail.Title}
-            poster
-            year
-            rated
-            runtime
-            Genre
-            Director
-            Writer
-            Actors
-            Plot
-            awards
-            ratings
-            production
-            website
-          </div>
-            :
-            <div>
-              { errorMessage}
-            </div>
-          }
-        </>
+        // <>
+        //   { errorMessage !== undefined ?
+        //   <div>
+        //     movie title: {movieDetail.Title}
+        //     poster
+        //     year
+        //     rated
+        //     runtime
+        //     Genre
+        //     Director
+        //     Writer
+        //     Actors
+        //     Plot
+        //     awards
+        //     ratings
+        //     production
+        //     website
+        //   </div>
+        //     :
+        //     <div>
+        //       { errorMessage}
+        //     </div>
+        //   }
+        // </>
     )
 }
 
