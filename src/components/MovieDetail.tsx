@@ -72,33 +72,33 @@ const MovieDetail = (props: Props) => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
       }, []);
 
-
+    // eslint-disable-next-line
     const  { movieDetail, errorMessage, /* loading */ } = state;
     return(
-        // <>
-        //   { errorMessage !== undefined ?
-        //   <div>
-        //     movie title: {movieDetail.Title}
-        //     poster
-        //     year
-        //     rated
-        //     runtime
-        //     Genre
-        //     Director
-        //     Writer
-        //     Actors
-        //     Plot
-        //     awards
-        //     ratings
-        //     production
-        //     website
-        //   </div>
-        //     :
-        //     <div>
-        //       { errorMessage}
-        //     </div>
-        //   }
-        // </>
+        <>
+          {/* { errorMessage !== undefined ?
+          <div>
+            movie title: {movieDetail.Title}
+            poster
+            year
+            rated
+            runtime
+            Genre
+            Director
+            Writer
+            Actors
+            Plot
+            awards
+            ratings
+            production
+            website
+          </div>
+            :
+            <div>
+              { errorMessage}
+            </div>
+          } */}
+        </>
     )
 }
 
